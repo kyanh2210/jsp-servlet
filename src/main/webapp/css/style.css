@@ -1,0 +1,148 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+#popUpWindow{
+ background: lightblue; 
+}
+body{
+	font-family:Arial;
+	padding: 10px;
+	background: #f1f1f1;
+}
+.header{
+	padding:30px;
+	text-align:  center;
+	background:#222F3C;
+	background-image:url("pichere.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	color:grey;
+	float:left;
+	width:100%;
+}
+.clear{
+	display:block;
+	content:"";
+	clear:both;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.header p{
+	color:#1B9FCF;
+}
+.header h1 {
+	font-size: 50px;
+	color:white;
+}
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+    height: 50px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+    background: blue
+}
+.topnav{
+	overflow: hidden;
+	background: #333;
+}
+.topnav a {
+	float:left;
+	display:block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.topnav a:hover{
+	background-color: #ddd;
+	color:black;
+}
+
+.left-col{
+	width:75%;
+}
+.rightcolumn{
+	float:right;
+	width:25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+.fakeimg{
+	background-color: #aaa;
+	width:100%;
+	height:20px;
+}
+.card{
+	background-color: white;
+	padding:20px;
+	margin-top: 20px;
+	
+}
+.in{
+	width:100%;
+	height:25px;
+	margin:5px 0px;
+}
+.input{
+	width:100%
+}
+.row::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.footer{
+	padding:20px;
+	text-align: center;
+	margin-top: 20px;
+	background-color:#222F3C;
+	color:#C4974A;
+}
+.footer a{
+	text-decoration:none;
+	color:#C4974A;
+}
+
+@media screen and(max-width:800px){
+	.leftcolumn, .rightcolumn{
+		width:100%;
+		padding:0;
+	}
+
+}
+
+@media screen and(max-width:400px){
+	.topnav a{
+		float:none;
+		width: 100%;
+	}
+
+}
